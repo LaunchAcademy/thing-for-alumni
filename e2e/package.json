@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "mock-coding-challenge-e2e",
+  "version": "0.0.1",
+  "scripts": {
+    "e2e:open": "NODE_ENV=e2e ./node_modules/.bin/cypress open",
+    "e2e:run": "NODE_ENV=e2e ./node_modules/.bin/cypress run"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.3",
+    "cypress": "^6.1.0", 
+    "cheerio": "^1.0.0-rc.10",
+    "got": "^11.8.0",
+    "webpack": "^5.3.2",
+    "webpack-dev-middleware": "^4.0.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "got": "^11.8.0"
+  }
+}

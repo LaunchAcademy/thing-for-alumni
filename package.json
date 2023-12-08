@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace mock-coding-challenge-client build",
+    "dev": "yarn workspace mock-coding-challenge-server dev",
+    "dev:debug": "yarn workspace mock-coding-challenge-server dev:debug",
+    "heroku-postbuild": "yarn workspace mock-coding-challenge-client build",
+    "start": "yarn workspace mock-coding-challenge-server start",
+    "dev:cypress": "yarn workspace mock-coding-challenge-server dev:e2e",
+    "e2e:open": "yarn workspace mock-coding-challenge-e2e e2e:open",
+    "e2e:run": "yarn workspace mock-coding-challenge-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^14.15"
+  }
+}
